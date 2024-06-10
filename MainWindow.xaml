@@ -12,7 +12,7 @@
             <RowDefinition Height="145*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="1">
-            <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" Margin="0,10,0,0" Grid.Row="1" x:Name="ListCheck">
+            <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" Margin="0,10,0,0" Grid.Row="1" x:Name="ListCheck" SelectionChanged="ListCheck_SelectionChanged">
                 <ListView.ItemsPanel>
                     <ItemsPanelTemplate>
                         <WrapPanel Orientation="Horizontal"></WrapPanel>
@@ -38,6 +38,21 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+        </Grid>
+        <Grid Grid.Row="0">
+            <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174" Height="30"/>
+            <TextBox x:Name="Last_Name" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="174" Height="30"/>
+            <TextBox x:Name="First_Name" HorizontalAlignment="Left" Margin="10,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174" Height="30"/>
+            <TextBox x:Name="Password" HorizontalAlignment="Left" Margin="211,13,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="158" Height="27"/>
+            <ComboBox x:Name="Office" HorizontalAlignment="Left" Margin="211,0,0,0" VerticalAlignment="Center" Width="158" Height="30"/>
+            <DatePicker x:Name="Birthday" HorizontalAlignment="Left" Margin="211,104,0,0" VerticalAlignment="Top" Height="30" Width="158"/>
+            <RadioButton  x:Name="Role" Content="Admin" HorizontalAlignment="Left" Margin="400,57,0,0" VerticalAlignment="Top"/>
+            <Button Content="Add" HorizontalAlignment="Left" Margin="644,13,0,0" VerticalAlignment="Top" Height="28" Width="127" Click="Add_Click"/>
+            <Button Content="Update" HorizontalAlignment="Left" Margin="644,53,0,0" VerticalAlignment="Top" Height="28" Width="127" Click="Update_Click"/>
+            <Button Content="Delete" HorizontalAlignment="Left" Margin="644,92,0,0" VerticalAlignment="Top" Height="28" Width="127" Click="Delete_Click"/>
+            <Image x:Name="Profile" HorizontalAlignment="Left" Height="78" Margin="513,13,0,0" VerticalAlignment="Top" Width="75"/>
+            <Button Content="+" HorizontalAlignment="Left" Margin="533,105,0,0" VerticalAlignment="Top" Height="29" Width="38" RenderTransformOrigin="-1.132,0.512" Click="Photo_Click"/>
+
         </Grid>
     </Grid>
 </Window>
