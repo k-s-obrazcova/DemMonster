@@ -7,12 +7,11 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        <Border BorderBrush="Black" BorderThickness="1" VerticalAlignment="Top" HorizontalAlignment="Left" Height="310" Width="188" Margin="0,0,0,0" />
-        <Image HorizontalAlignment="Left" Height="141" Margin="10,10,0,0" VerticalAlignment="Top" Width="168"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,177,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="27" Width="164"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,209,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="27" Width="164"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,242,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="27" Width="164"/>
-        <Button Content="Подробнее" HorizontalAlignment="Left" Margin="27,274,0,0" VerticalAlignment="Top" Height="24" Width="139"/>
-
+        <Border BorderBrush="Black" BorderThickness="1" VerticalAlignment="Top" HorizontalAlignment="Left" Height="310" Width="188" Margin="304,50,0,0" />
+        <Image HorizontalAlignment="Left" Height="141" Margin="314,60,0,0" VerticalAlignment="Top" Width="168"/>
+        <TextBlock x:Name="Email"  HorizontalAlignment="Left" Margin="314,227,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="27" Width="164"/>
+        <TextBlock x:Name="Last_Name" HorizontalAlignment="Left" Margin="314,259,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="27" Width="164"/>
+        <TextBlock x:Name="Password" HorizontalAlignment="Left" Margin="314,292,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="27" Width="164"/>
+       
     </Grid>
 </Window>

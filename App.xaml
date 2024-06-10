@@ -4,6 +4,16 @@
              xmlns:local="clr-namespace:WpfApp27"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <Style TargetType="ListViewItem">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Roles.Title}" Value="Administrator">
+                    <Setter Property="Background" Value="LightGreen"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Active}" Value="False">
+                    <Setter Property="Background" Value="Red"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
          
     </Application.Resources>
 </Application>
