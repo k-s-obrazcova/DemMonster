@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp27.All_Users"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp27"
+        mc:Ignorable="d"
+        Title="All_Users" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="159*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <DataGrid x:Name="DataUsers" AutoGenerateColumns="False" IsReadOnly="True" Margin="10">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Email" Binding="{Binding Email}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Пароль" Binding="{Binding Password}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Имя" Binding="{Binding FirstName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Фамилия" Binding="{Binding LastName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="День рождения" Binding="{Binding Birthdate}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Активность" Binding="{Binding Active}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Офис" Binding="{Binding Offices.Title}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Роль" Binding="{Binding Roles.Title}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <TextBox x:Name="Search" HorizontalAlignment="Left" Margin="10,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="349" Height="26" TextChanged="Search_TextChanged"/>
+        <ComboBox x:Name="Parametr" HorizontalAlignment="Left" Margin="57,80,0,0" VerticalAlignment="Top" Width="203" Height="26" SelectionChanged="Parametr_SelectionChanged"/>
+        <TextBox x:Name="All" HorizontalAlignment="Left" Margin="418,19,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="26"/>
+        <TextBox x:Name="Cairo" HorizontalAlignment="Left" Margin="418,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="26"/>
+        <TextBox x:Name="Average" HorizontalAlignment="Left" Margin="418,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="26"/>
+
+    </Grid>
+</Window>

@@ -13,10 +13,10 @@ namespace WpfApp27
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Session1_01Entities : DbContext
+    public class Session1_01Entities : DbContext
     {
         public Session1_01Entities()
-            : base("name=Session1_01Entities")
+            : base("Session1_01Entities")
         {
         }
     

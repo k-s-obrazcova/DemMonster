@@ -176,5 +176,12 @@ namespace WpfApp27
         
         
         }
+
+        private void Users_Click(object sender, RoutedEventArgs e)
+        {
+            All_Users window = new All_Users();
+            window.Show();
+            this.Close();
         }
+    }
 }
